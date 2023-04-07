@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #2c3249;
+    background-color: #fefefe;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0d5d57;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #59aca6;
+    transition: color 0.3s ease-in-out;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.welcome button {
+    background-color: #0d5d57;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome button:hover {
+    background-color: #0a473f;
+}
+
+.welcome-container img {
+    width: auto;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background-color: #dfece9;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.menu {
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container>div {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.chefs-container {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.chefs-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chefs-card-container>div {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.chefs-card-container>div>img {
+    max-width: 100%;
+}
+
+.owners-container {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.owners-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owners-card-container>div {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.owners-card-container>div>img {
+    max-width: 100%;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgba(30, 123, 116, 0.8), rgba(13, 93, 87, 0.8));
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left button {
+    margin-top: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.footer-left button:hover {
+    background-color: #fdba33;
+}
+
+.footer-right {
+    flex: 0 0 auto;
+}
+
+.footer-right img {
+    max-width: 100px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+
+    .welcome-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome {
+        padding-right: 0;
+    }
+
+    .welcome-container img {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-container>div {
+        margin-bottom: 20px;
+    }
+
+    .menu-container,
+    .chefs-card-container,
+    .owners-card-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-container>div,
+    .chefs-card-container>div,
+    .owners-card-container>div {
+        margin: 10px 0;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
